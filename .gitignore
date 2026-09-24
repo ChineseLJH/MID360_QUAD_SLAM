@@ -1,0 +1,55 @@
+# =========================
+# CMake / Build artifacts
+# =========================
+build/
+**/build/
+cmake-build-*/
+
+CMakeFiles/
+**/CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+CTestTestfile.cmake
+Testing/
+install_manifest.txt
+compile_commands.json
+COLCON_IGNORE
+
+# =========================
+# C/C++ binaries & objects
+# =========================
+*.o
+*.obj
+*.a
+*.so
+*.so.*
+*.dylib
+*.dll
+*.exe
+*.out
+
+# =========================
+# Editor / OS files
+# =========================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+install/
+log/
+patches/
+bags/
+livox_ros_driver2/
+
+# =========================
+# Point cloud files
+# =========================
+*.pcd
+*.PCD
+
+src/lidar_slam_modules/point_lio_ros2/Log/*
+src/lidar_slam_modules/point_lio_ros2/PCD/*
+
+*.txt

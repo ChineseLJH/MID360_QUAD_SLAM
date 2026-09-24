@@ -1,0 +1,25 @@
+{
+    "name": "Local_PC_Livox_MID_360",
+    "build": { 
+        "dockerfile": "Dockerfile",
+        "options": ["--network=host"]
+    },
+    "runArgs": [
+        "--name=livox-ros2-dev",
+        "--net=host",
+        "--ipc=host",
+        "--privileged",
+        "--volume=/dev:/dev",
+        "--volume=/tmp/.X11-unix:/tmp/.X11-unix:rw",
+        "--env=DISPLAY"
+    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools",
+                "ms-vscode.cmake-tools"
+            ]
+        }
+    },
+    "remoteUser": "root"
+}

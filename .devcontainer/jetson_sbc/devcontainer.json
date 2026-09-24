@@ -1,0 +1,26 @@
+{
+    "name": "Jetson_SBC_Livox_MID_360",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "options": ["--network=host"]
+    },
+    "runArgs": [
+        "--name=mid360-orin-dev",
+        "--ipc=host",
+        "--net=host",
+        "--privileged",
+        "--volume=/dev:/dev",
+        "--volume=/run/jtop.sock:/run/jtop.sock",
+        "--volume=/tmp/.X11-unix:/tmp/.X11-unix:rw",
+        "--env=DISPLAY"
+    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools",
+                "ms-vscode.cmake-tools"
+            ]
+        }
+    },
+    "remoteUser": "root"
+}
