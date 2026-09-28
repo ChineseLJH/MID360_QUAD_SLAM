@@ -26,4 +26,4 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # 3. 注入 ROS 2 环境变量
 RUN echo "source /opt/ros/humble/setup.bash" >> /root/.bashrc
 
-WORKDIR /workspace
+WORKDIR /workspaces/MID360_QUAD_SLAM

@@ -28,4 +28,4 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # 3. 环境变量注入
 RUN echo "source /opt/ros/humble/setup.bash" >> /root/.bashrc
 
-WORKDIR /workspaces/LIVOX-MID-360
+WORKDIR /workspaces/MID360_QUAD_SLAM
