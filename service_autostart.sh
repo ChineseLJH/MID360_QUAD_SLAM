@@ -52,7 +52,7 @@ log_info "正在向会话窗格注入启动命令..."
 tmux send-keys -t "$SESSION_NAME:0.0" "docker exec -it ${CONTAINER_NAME} bash -c './run_localization.sh'" C-m
 
 # Pane 0.1: 串口驱动节点
-tmux send-keys -t "$SESSION_NAME:0.1" "docker exec -it ${CONTAINER_NAME} bash -c 'source /opt/ros/humble/setup.bash && source install/setup.bash && python3 src/gpio_uart.py'" C-m
+tmux send-keys -t "$SESSION_NAME:0.1" "docker exec -it ${CONTAINER_NAME} bash -c 'source /opt/ros/humble/setup.bash && source install/setup.bash && python3 src/tf_to_uart_jetson.py'" C-m
 
 echo -e "${COLOR_PROMPT}======================================================${COLOR_RESET}"
 log_info "后台服务启动完成。接入监控终端请执行:"
